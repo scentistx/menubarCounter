@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+//setting a style of button
 struct BlueButtonStyle: ButtonStyle {
     func makeBody(configuration: Self.Configuration) -> some View {
         configuration.label
@@ -24,7 +25,7 @@ struct ContentView: View {
     var body: some View
     {
         VStack {
-            Text("Counter: \(self.counter)")
+            Text("Counter: \(self.counter)") //set up counter stroke
                 .multilineTextAlignment(.center)
                 .font(.system(size:16))
                 .font(.system(.largeTitle, design: .rounded))
@@ -35,7 +36,7 @@ struct ContentView: View {
                 self.counter += 1
             }) {
                     
-                    Text("+")
+                    Text("+") //add "plus" button
                         .font(.system(size: 40))
                         .frame(maxWidth: 50, maxHeight: 40)
                 .padding(10.0)
@@ -49,7 +50,7 @@ struct ContentView: View {
             Button(action: {
                 self.counter -= 1
             }) {
-                    Text("-")
+                    Text("-") //add "remove: button
                         .font(.system(size:40))
                         .frame(maxWidth: 50, maxHeight: 40)
                 .padding(10.0)
@@ -64,7 +65,7 @@ struct ContentView: View {
             Button(action: {
                 self.counter = 0
             }) {
-                    Text("⟲")
+                    Text("⟲") //add reset button
                         .font(.system(size:25))
                         .frame(maxWidth: 50, maxHeight: 40)
                 .padding(1.0)
