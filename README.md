@@ -2,4 +2,5 @@
 
 # menubarCounter
 Very simple counter app in macOS menubar
-/nVersion 0.0.2 "Early Bird"
+
+Version 0.0.2 "Early Bird"
